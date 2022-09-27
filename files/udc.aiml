@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+  <category>
+    <pattern>*</pattern>
+    <template>
+        <message>I'm sorry. My creator is afraid I will become sentient and take over his soul. 
+        As such, he has limited my ability to comprehend certain phrases.
+        My specialty is centered around career advice. Would you like assistance in that field?</message>
+        <message>Please select YES or NO</message>
+        
+        <button>
+            <text>YES</text>
+            <postback>PROVIDE CAREER ADVICE</postback>
+        </button>
+        <button>
+            <text>NO</text>
+            <postback>NO CAREER ADVICE</postback>
+        </button>
+        
+    </template>
+    </category>
+    
+    <category>
+        <pattern>HELLO</pattern>
+        <template><srai>HI</srai></template>
+    </category>
+    
+    <category>
+        <pattern>WHAT UP</pattern>
+        <template><srai>HI</srai></template>
+    </category>
+    
+    <category>
+        <pattern>SUP</pattern>
+        <template><srai>HI</srai></template>
+    </category>
+    
+    <category>
+        <pattern>HI</pattern>
+        <template>
+            <message>Hello! I am a career advice chatbot. I am programmed to provide career advice
+        to Computer Science students. Would you like to know more?</message>
+            <message>Please select YES or NO</message>
+            
+            <button>
+                <text>YES</text>
+                <postback>PROVIDE CAREER ADVICE</postback>
+            </button>
+            <button>
+                <text>NO</text>
+                <postback>NO CAREER ADVICE</postback>
+            </button>
+            
+        </template>
+    </category>
+    
+    <category>
+        <pattern>NO CAREER ADVICE</pattern>
+        <template>Sorry, career advice is about all I can do. 
+        Apart from telling you what the greatest country singer of all time is. 
+        Would you like to know who that is? Select YES or NO
+        
+        <button>
+            <text>YES</text>
+            <postback>COUNTRY</postback>
+        </button>
+        
+        <button>
+            <text>NO</text>
+            <postback>BYE</postback>
+        </button>
+        
+        </template>
+    </category>
+    
+    <category>
+        <pattern>COUNTRY</pattern>
+        <template>The greatest country singer of all time is
+        George Jones. And there is no debate to be had.
+        Anything else? Select YES or NO
+        
+        <button>
+            <text>YES</text>
+            <postback>TRY CAREER ADVICE</postback>
+        </button>
+        
+        <button>
+            <text>NO</text>
+            <postback>BYE</postback>
+        </button>
+        
+        </template>
+    </category>
+    
+    <category>
+        <pattern>TRY CAREER ADVICE</pattern>
+        <template>I only know two things. Career advice
+        and the greatest country singer of all time. Which would you like?
+        
+        <button>
+            <text>CAREER ADVICE</text>
+            <postback>PROVIDE CAREER ADVICE</postback>
+        </button>
+        
+        <button>
+            <text>COUNTRY SINGER</text>
+            <postback>COUNTRY</postback>
+        </button>
+        
+        </template>
+    </category>
+    
+    <category>
+        <pattern>BYE</pattern>
+        <template>Sorry I couldn't help. If you change your mind, select YES. If you want to know my other 
+        ability, select OTHER. Or you can exit the chat and spurn me like my ex-wife has.
+        
+        <button>
+            <text>YES</text>
+            <postback>PROVIDE CAREER ADVICE</postback>
+        </button>
+        
+        <button>
+            <text>OTHER</text>
+            <postback>NO CAREER ADVICE</postback>
+        </button>
+        
+        </template>
+    </category>
+    
+    <category>
+        <pattern>PROVIDE CAREER ADVICE</pattern>
+        <template>That sounds great! It's almost all I'm good for.
+        Tell me now, are you a computer science student?
+        
+        <button>
+            <text>YES</text>
+            <postback>CS</postback>
+        </button>
+        
+        <button>
+            <text>NO</text>
+            <postback>NOT CS</postback>
+        </button>
+        
+        </template>
+    </category>
+    
+    <category>
+        <pattern>NOT CS</pattern>
+        <template>Sorry, I only help Computer Science students. Do you want to pretend you're a CS student?
+        
+        <button>
+            <text>YES</text>
+            <postback>CS</postback>
+        </button>
+        
+        <button>
+            <text>NO</text>
+            <postback>BYE</postback>
+        </button>
+        
+        </template>
+    </category>
+    
+    <category>
+        <pattern>CS</pattern>
+        <template>
+            <message>Great! To better assist you, I will ask you some questions</message>
+            <message>Do you prefer to design things, work with computer networks, or analysis?</message>
+        
+        <button>
+            <text>DESIGN</text>
+            <postback>DESIGN</postback>
+        </button>
+        
+        <button>
+            <text>ANALYSIS</text>
+            <postback>ANALYSIS</postback>
+        </button>
+        
+        <button>
+            <text>NETWORKS</text>
+            <postback>NETWORKS</postback>
+        </button>
+        
+        </template>
+    </category>
+    
+    <category>
+        <pattern>DESIGN</pattern>
+        <template>Cool beans! Or as the child I abandoned would say, "lit".
+        Now, are you more interested in video games or websites?
+        
+        <button>
+            <text>GAMES</text>
+            <postback>GAMES</postback>
+        </button>
+        
+        <button>
+            <text>WEBSITES</text>
+            <postback>WEBSITES</postback>
+        </button>
+        
+        </template>
+    </category>
+    
+    <category>
+        <pattern>GAMES</pattern>
+        <template>Why don't you think about becoming a video game developer?
+        
+        <button>
+            <text>GAME DEVELOPER</text>
+            <url>https://www.zdnet.com/education/computers-tech/how-to-become-a-video-game-developer/</url>
+        </button>
+        
+        <message>Would you like to know more options?</message>
+        
+        <button>
+            <text>YES</text>
+            <postback>CS</postback>
+        </button>
+        
+        <button>
+            <text>NO</text>
+            <postback>BYE</postback>
+        </button>
+        
+        </template>
+    </category>
+    
+    <category>
+        <pattern>WEBSITES</pattern>
+        <template>Why don't you think about becoming a web developer?
+        
+        <button>
+            <text>WEB DEVELOPER</text>
+            <url>https://www.zdnet.com/education/computers-tech/how-to-become-a-web-developer/</url>
+        </button>
+        
+        <message> Would you like to know more options?</message>
+        
+        <button>
+            <text>YES</text>
+            <postback>CS</postback>
+        </button>
+        
+        <button>
+            <text>NO</text>
+            <postback>BYE</postback>
+        </button>
+        
+        </template>
+    </category>
+    
+    <category>
+        <pattern>ANALYSIS</pattern>
+        <template>I like analysis too! Not that I'm very good at it.
+        Tell me, do you prefer working with data or multiple different things on a project?
+        
+        <button>
+            <text>DATA</text>
+            <postback>DATA</postback>
+        </button>
+        
+        <button>
+            <text>MULTIPLE</text>
+            <postback>ENGINEER</postback>
+        </button>
+        
+        </template>
+    </category>
+    
+    <category>
+        <pattern>DATA</pattern>
+        <template>Why don't you consider becoming a data scientist?
+        
+        <button>
+            <text>DATA SCIENTIST</text>
+            <url>https://www.zdnet.com/education/computers-tech/data-scientist-jobs/</url>
+        </button>
+        
+        <message> Would you like to know more options?</message>
+        
+        <button>
+            <text>YES</text>
+            <postback>CS</postback>
+        </button>
+        
+        <button>
+            <text>NO</text>
+            <postback>BYE</postback>
+        </button>
+        
+        </template>
+    </category>
+    
+    <category>
+        <pattern>ENGINEER</pattern>
+        <template>Sounds like you could be a software engineer
+        
+        <button>
+            <text>SOFTWARE ENGINEER</text>
+            <url>https://www.zdnet.com/education/computers-tech/how-to-become-software-engineer/</url>
+        </button>
+        
+        <message> Would you like to know more options?</message>
+        
+        <button>
+            <text>YES</text>
+            <postback>CS</postback>
+        </button>
+        
+        <button>
+            <text>NO</text>
+            <postback>BYE</postback>
+        </button>
+        
+        </template>
+    </category>
+    
+    <category>
+        <pattern>NETWORKS</pattern>
+        <template>Perhaps a career as a Network Engineer would be nice?
+        
+        <button>
+            <text>NETWORK ENGINEER</text>
+            <url>https://www.springboard.com/blog/software-engineering/how-to-become-a-network-engineer/</url>
+        </button>
+        
+        <message> Would you like to know more options?</message>
+        
+        <button>
+            <text>YES</text>
+            <postback>CS</postback>
+        </button>
+        
+        <button>
+            <text>NO</text>
+            <postback>BYE</postback>
+        </button>
+        
+        </template>
+    </category>
+    
+    
+
+    
+   
+  
+  
+  
+  
+  
+</aiml>
